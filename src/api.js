@@ -1,7 +1,8 @@
 // Marka la deploy-gareynayo (Vercel, iwm), ku dar environment variable
 // VITE_API_URL oo ku dhigan URL-ka backend-kaaga oo public ah.
 // Local development-ka, wuxuu isticmaalayaa https://localhost:7204/api si caadi ah.
-const BASE_URL = import.meta.env.VITE_API_URL || "https://localhost:7204/api";
+// const BASE_URL = import.meta.env.VITE_API_URL || "https://localhost:7204/api";
+const API_URL = "https://vehiclesystem-7hjh.onrender.com/api";
 
 async function request(path, options = {}) {
   const res = await fetch(`${BASE_URL}${path}`, {
